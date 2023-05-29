@@ -1,0 +1,87 @@
+{
+  "plugin_type": "extractors",
+  "name": "tap-capsulecrm",
+  "namespace": "tap_capsulecrm",
+  "variant": "matatika",
+  "label": "Capsule",
+  "docs": "https://www.matatika.com/docs/data-sources/tap-capsulecrm/",
+  "repo": "https://github.com/Matatika/tap-capsulecrm",
+  "pip_url": "git+https://github.com/Matatika/tap-capsulecrm@v0.1.0",
+  "executable": "tap-capsulecrm",
+  "description": "Capsule is a customer relationship management software. \n\nCapsule is a cloud-based CRM tool that helps businesses manage their customer relationships by organizing contacts, tracking sales opportunities, and managing tasks and activities. It provides a centralized database for all customer interactions, allowing businesses to easily access customer information and history. Capsule also offers integrations with other tools such as email, social media, and accounting software to streamline workflows and improve efficiency. Its user-friendly interface and affordable pricing make it a popular choice for small and medium-sized businesses.",
+  "logo_url": "https://app.matatika.com/assets/images/datasource/tap-capsulecrm.svg",
+  "capabilities": [
+    "discover",
+    "stream_maps",
+    "state",
+    "about",
+    "catalog",
+    "schema_flattening"
+  ],
+  "settings": [
+    {
+      "name": "access_token",
+      "kind": "password",
+      "label": "Access Token",
+      "description": "A token that grants access to the Capsule API.",
+      "protected": false
+    },
+    {
+      "name": "client_id",
+      "kind": "password",
+      "label": "Client ID",
+      "description": "A unique identifier for the client application.",
+      "protected": false
+    },
+    {
+      "name": "client_secret",
+      "kind": "password",
+      "label": "Client Secret",
+      "description": "A secret key used to authenticate the client application.",
+      "protected": false
+    },
+    {
+      "name": "expires_in",
+      "kind": "integer",
+      "label": "Expires In",
+      "description": "The amount of time in seconds until the access token expires.",
+      "protected": false
+    },
+    {
+      "name": "flattening_enabled",
+      "kind": "boolean",
+      "label": "Flattening Enabled",
+      "description": "A boolean value indicating whether or not to flatten nested objects in the API response.",
+      "protected": false
+    },
+    {
+      "name": "flattening_max_depth",
+      "kind": "integer",
+      "label": "Flattening Max Depth",
+      "description": "The maximum depth to which nested objects will be flattened.",
+      "protected": false
+    },
+    {
+      "name": "refresh_token",
+      "kind": "password",
+      "label": "Refresh Token",
+      "description": "A token used to obtain a new access token when the current one expires.",
+      "protected": false
+    },
+    {
+      "name": "stream_map_config",
+      "kind": "object",
+      "label": "Stream Map Config",
+      "description": "Configuration settings for mapping API responses to data streams.",
+      "protected": false
+    },
+    {
+      "name": "stream_maps",
+      "kind": "object",
+      "label": "Stream Maps",
+      "description": "A mapping of API endpoints to data streams.",
+      "protected": false
+    }
+  ],
+  "full_description": "Capsule is a customer relationship management software. \n\nCapsule is a cloud-based CRM tool that helps businesses manage their customer relationships by organizing contacts, tracking sales opportunities, and managing tasks and activities. It provides a centralized database for all customer interactions, allowing businesses to easily access customer information and history. Capsule also offers integrations with other tools such as email, social media, and accounting software to streamline workflows and improve efficiency. Its user-friendly interface and affordable pricing make it a popular choice for small and medium-sized businesses.\n\n## Settings\n\n\n### Access Token\n\nA token that grants access to the Capsule API.\n\n### Client ID\n\nA unique identifier for the client application.\n\n### Client Secret\n\nA secret key used to authenticate the client application.\n\n### Expires In\n\nThe amount of time in seconds until the access token expires.\n\n### Flattening Enabled\n\nA boolean value indicating whether or not to flatten nested objects in the API response.\n\n### Flattening Max Depth\n\nThe maximum depth to which nested objects will be flattened.\n\n### Refresh Token\n\nA token used to obtain a new access token when the current one expires.\n\n### Stream Map Config\n\nConfiguration settings for mapping API responses to data streams.\n\n### Stream Maps\n\nA mapping of API endpoints to data streams."
+}
